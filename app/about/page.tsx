@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import '../../styles/about.css'; // Ensure the CSS file is imported
 

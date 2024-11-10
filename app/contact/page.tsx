@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import Image from 'next/image';
+
 import '../../styles/contact.css'; // Make sure you import the CSS file
 
 function Contact() {

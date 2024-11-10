@@ -14,8 +14,9 @@ function Navbar() {
       <nav className="navbar">
         {/* Logo centered on small screens */}
         <div className="logo">
+            
           <Image src='/nav.png' className="logo-img" width={32} height={32} alt='logo' />
-          <span><a href="/">card</a></span>
+          <Link href='/'>Cart</Link>
         </div>
 
         {/* Show/Hide menu based on isOpen state */}
