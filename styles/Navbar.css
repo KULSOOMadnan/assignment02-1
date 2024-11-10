@@ -1,0 +1,125 @@
+/* General Styles for Navbar */
+.navbar {
+    background-color: #064e3b; /* Emerald color */
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Satisfy', sans-serif;
+  }
+  
+  /* Logo and brand */
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .navbar .logo img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+  
+  /* Navbar Links for desktop */
+  .navbar .desktop-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar .desktop-nav li {
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .navbar .desktop-nav li:hover {
+    color: #cbd5e0; /* Light gray on hover */
+  }
+  
+  /* Hamburger Button */
+  .navbar .hamburger-btn {
+    display: none;
+    font-size: 2.5rem;
+    color: white;
+  }
+  
+  .navbar .hamburger-btn.open {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Mobile Navbar Styles */
+  .mobile-nav {
+    display: none;
+  }
+  
+  .mobile-nav.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #064e3b;
+  }
+  
+  .mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mobile-nav li {
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+  }
+  
+  .mobile-nav li:hover {
+    color: #2d9e75; /* Emerald hover color */
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* On mobile screens, show the hamburger and hide desktop links */
+  @media (max-width: 768px) {
+    .navbar .desktop-nav {
+      display: none;
+    }
+    
+    .navbar .hamburger-btn {
+      display: flex;
+      background-color:#064e3b ;
+      border: none;
+    }
+  
+    .mobile-nav.open {
+      display: flex;
+    }
+  }
+  
+  /* Optional: Adjust for very small screens */
+  @media (max-width: 480px) {
+    .navbar .logo {
+      font-size: 1.5rem;
+    }
+  
+    .navbar .desktop-nav li {
+      font-size: 1rem;
+    }
+  
+    .mobile-nav li {
+      font-size: 1.25rem;
+    }
+  }
+  

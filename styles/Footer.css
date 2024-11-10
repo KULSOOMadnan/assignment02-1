@@ -1,0 +1,42 @@
+
+
+.footer {
+  padding: 1rem; /* p-5 */
+  background-color: #064e3b; /* bg-emerald-900 */
+  text-align: center; /* text-center */
+  color: white; /* text-white */
+  font-family: 'Satisfy', cursive; /* font-satisfy */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin */
+}
+
+/* Media Query for screens larger than 768px (Tablets and above) */
+@media (min-width: 768px) {
+  .footer {
+    padding: 1.5rem; /* Increase padding for larger screens */
+  }
+}
+
+/* Media Query for screens larger than 1024px (Desktops and above) */
+@media (min-width: 1024px) {
+  .footer {
+    padding: 1.5rem; /* Further increase padding for large screens */
+  }
+
+  .footer p {
+    font-size: 1.125rem; /* Slightly increase font size */
+  }
+}
+
+/* Media Query for small screens (Below 768px) */
+@media (max-width: 767px) {
+  .footer {
+    padding: 0.25rem; /* Reduce padding for smaller screens */
+  }
+
+  .footer p {
+    font-size: 0.875rem; /* Smaller font size for small devices */
+  }
+}

@@ -1,0 +1,78 @@
+/* styles/Services.module.css */
+.container {
+    position: relative;
+    height: 150vh;
+    font-family: 'Satisfy', cursive;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-floral-wallpaper_52683-67104.jpg?t=st=1727013454~exp=1727017054~hmac=a63522268a5b83674f1117117146b52c156ae774083949d07d331c0156c40d79&w=900');
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   
+    text-align: center;
+  }
+  
+  .heading  {
+    font-size: 3rem; /* text-5xl */
+    font-weight: bold;
+    color: #064E3B; /* text-emerald-900 */
+  }
+  
+  .subheading {
+    margin-top: 2rem;
+    font-size: 5rem; /* text-8xl */
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.375rem;
+  }
+  
+   .card .cardTitle {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #064E3B; /* text-emerald-900 */
+  }
+  
+   .card .cardDescription {
+    font-size: 1rem;
+    color: rgb(134, 28, 46); /* text-gray-600 */
+  }
+  
+  @media screen and (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+    }
+  
+    .heading {
+      font-size: 5rem; /* md:text-8xl */
+    }
+  }
+  
