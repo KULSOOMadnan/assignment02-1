@@ -1,14 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import '../styles/home.css'
-// import Navbar from "./@components/Navbar";
-// import Footer from "./@components/Footer";
+
 
 export default function Home() {
   return (
     <>
-      {/* Navbar */}
-      {/* <Navbar /> */}
+      
       <main className="main">
         <div className="background-image">
           {/* Background Image */}
@@ -32,7 +30,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      {/* <Footer /> */}
+     
     </>
   );
 }
